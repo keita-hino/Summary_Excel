@@ -5,8 +5,7 @@ class ConfigReader
   end
   def add(id,name)
      @date.push(
-      "id":id,
-      "name":name
+      "#{id}":name                  
     )
   end
   def read
