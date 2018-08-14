@@ -13,6 +13,7 @@ module CONF
   PJNAME_ROW     = 2
   ZISSEKI        = 3
   MIKOMI         = 4
+  NAME_ROW       = 1
 end
 
 class Excel
@@ -44,7 +45,7 @@ class Excel
             ]
           ]
         )
-        count = count + 1
+        count += 1
       end
     end
 
@@ -68,10 +69,21 @@ class Excel
     # config.read
   end
 
-  def write
+  def write(summary)
     workbook = RubyXL::Parser.parse(out_path)
     worksheet = workbook[OUT_SHEET_NAME]
     worksheet[3][2].change_contents(2.4)
+    count = 3
+    # puts summary[0][:"Sample3"]
+    #ファイル内の予実を取得
+    until worksheet[count][NAME_ROW].value == nil do
+
+      for i in 0..summary.count - 1
+
+      end
+      puts worksheet[count][NAME_ROW].value
+      count = count + 1
+    end
 
     # workbook.write(out_path)
     puts worksheet[3][2].value

@@ -2,8 +2,12 @@ require './excel'
 require 'json'
 
 excel = Excel.new
-a = excel.read
+summary = excel.read
+puts summary[0][:"Sample3"]
 
-puts a
+
+# excel.write(summary)
+
+# puts a
 
 # excel.write
