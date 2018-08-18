@@ -1,6 +1,6 @@
 require 'rubyXL'
 require './excel'
-#require 'byebug' #デバッグ用
+require 'byebug' #デバッグ用
 
 class Reader
   include Conf

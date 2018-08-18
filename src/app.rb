@@ -5,6 +5,7 @@ require './writer'
 
 excel = Excel.new
 summary = excel.read
+puts summary
 # puts summary
 # puts summary[0][:"Sample3"]
 

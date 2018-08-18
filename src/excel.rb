@@ -3,8 +3,8 @@ require './Config_Reader'
 
 
 module Conf
-  IN_FILE_PATH   = "/Users/hinokeita/Desktop/workspace/summary_excel/target_folder".freeze
-  OUT_FILE_PATH  = "/Users/hinokeita/Desktop/workspace/summary_excel/output_file".freeze
+  IN_FILE_PATH   = "../target_folder".freeze
+  OUT_FILE_PATH  = "../output_file".freeze
   CONFIG_FILE    = "env.rb".freeze
   OUTPUT_FILE    = "output.xlsx".freeze
   FILE_TYPE      = ".xlsx".freeze
